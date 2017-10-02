@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>stamaimer's blog</title><link href="https://stamaimer.github.io/" rel="alternate"></link><link href="https://stamaimer.github.io/feeds/all.atom.xml" rel="self"></link><id>https://stamaimer.github.io/</id><updated>2017-10-02T20:20:50+08:00</updated><entry><title>Pelican Tutorial</title><link href="https://stamaimer.github.io/pelican-tutorial.html" rel="alternate"></link><published>2017-10-02T20:20:50+08:00</published><updated>2017-10-02T20:20:50+08:00</updated><author><name>stamaimer</name></author><id>tag:stamaimer.github.io,2017-10-02:/pelican-tutorial.html</id><summary type="html">&lt;h3&gt;Install Pelican&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>stamaimer's blog - Tutorial</title><link href="https://stamaimer.github.io/" rel="alternate"></link><link href="https://stamaimer.github.io/feeds/tutorial.atom.xml" rel="self"></link><id>https://stamaimer.github.io/</id><updated>2017-10-02T20:20:50+08:00</updated><entry><title>Pelican Tutorial</title><link href="https://stamaimer.github.io/pelican-tutorial.html" rel="alternate"></link><published>2017-10-02T20:20:50+08:00</published><updated>2017-10-02T20:20:50+08:00</updated><author><name>stamaimer</name></author><id>tag:stamaimer.github.io,2017-10-02:/pelican-tutorial.html</id><summary type="html">&lt;h3&gt;Install Pelican&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir myblog
 &lt;span class="nb"&gt;cd&lt;/span&gt; myblog
 virtualenv venv -p python2
@@ -111,4 +111,4 @@ remove comments information
 vim puslishconf.py
 add LINKS after SITEURL
 &lt;span class="nb"&gt;set&lt;/span&gt; &lt;span class="nv"&gt;DELETE_OUTPUT_DIRECTORY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; False
-&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>Hello, World</title><link href="https://stamaimer.github.io/hello-world.html" rel="alternate"></link><published>2017-10-02T00:23:29+08:00</published><updated>2017-10-02T00:23:29+08:00</updated><author><name>stamaimer</name></author><id>tag:stamaimer.github.io,2017-10-02:/hello-world.html</id><summary type="html">&lt;p&gt;Hello, World.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello, World.&lt;/p&gt;</content></entry></feed>
+&lt;/pre&gt;&lt;/div&gt;</content></entry></feed>

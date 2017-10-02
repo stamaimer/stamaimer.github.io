@@ -19,7 +19,8 @@
         <header id="banner" class="body">
                 <h1><a href="https://stamaimer.github.io/">stamaimer's blog </a></h1>
                 <nav><ul>
-                    <li><a href="https://stamaimer.github.io/category/misc.html">misc</a></li>
+                    <li><a href="https://stamaimer.github.io/category/msic.html">Msic</a></li>
+                    <li><a href="https://stamaimer.github.io/category/tutorial.html">Tutorial</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
@@ -27,47 +28,16 @@
                 <article>
                     <h1 class="entry-title"><a href="https://stamaimer.github.io/pelican-tutorial.html">Pelican Tutorial</a></h1>
                     <h3>Install Pelican</h3>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="highlight"><pre><span></span>mkdir myblog
+<div class="highlight"><pre><span></span>mkdir myblog
 <span class="nb">cd</span> myblog
 virtualenv venv -p python2
 <span class="nb">source</span> venv/bin/activate
 pip install pelican markdown tzlocal typogrify fabric
 </pre></div>
-</td></tr></table>
+
 
 <h3>Create Base Skeleton</h3>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28</pre></div></td><td class="code"><div class="highlight"><pre><span></span>pelican-quickstart
+<div class="highlight"><pre><span></span>pelican-quickstart
 
 Welcome to pelican-quickstart v3.7.1.
 
@@ -96,17 +66,10 @@ Please answer the following questions so this script can generate the files need
 &gt; Is this your personal page <span class="o">(</span>username.github.io<span class="o">)</span>? <span class="o">(</span>y/N<span class="o">)</span> y
 Done. Your new project is available at /Users/stamaimer/Workspace/myblog.bk
 </pre></div>
-</td></tr></table>
+
 
 <h3>Create Article</h3>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8</pre></div></td><td class="code"><div class="highlight"><pre><span></span>vim content/hello-world.md
+<div class="highlight"><pre><span></span>vim content/hello-world.md
 Title: Hello, World
 Date: Mon Oct  <span class="m">2</span> <span class="m">23</span>:44:54 CST <span class="m">2017</span>
 
@@ -115,25 +78,10 @@ Hello, World.
 fab build
 fab serve
 </pre></div>
-</td></tr></table>
+
 
 <h3>Modify Theme</h3>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cd</span> venv/lib/python2.7/site-packages/pelican/themes/notmyidea/templates
+<div class="highlight"><pre><span></span><span class="nb">cd</span> venv/lib/python2.7/site-packages/pelican/themes/notmyidea/templates
 
 vim article.html
 move <span class="o">{</span>% include <span class="s1">&#39;article_infos.html&#39;</span> %<span class="o">}</span> to the below of <span class="o">{{</span> article.content <span class="o">}}</span>
@@ -150,23 +98,10 @@ vim index.html
 move <span class="o">{{</span> article.content <span class="o">}}</span> to the left of <span class="o">{</span>% include <span class="s1">&#39;article_infos.html&#39;</span> %<span class="o">}</span>
 remove comments information
 </pre></div>
-</td></tr></table>
+
 
 <h3>Settings</h3>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14</pre></div></td><td class="code"><div class="highlight"><pre><span></span>vim pelicanconf.py
+<div class="highlight"><pre><span></span>vim pelicanconf.py
 <span class="nb">set</span> <span class="nv">SITEURL</span> <span class="o">=</span> <span class="s2">&quot;http://127.0.0.1:8000&quot;</span>
 <span class="nb">set</span> LINKS
 <span class="nb">set</span> SOCIAL
@@ -176,17 +111,17 @@ remove comments information
 <span class="nb">set</span> <span class="nv">DEFAULT_DATE_FORMAT</span> <span class="o">=</span> <span class="s2">&quot;%a %m-%d-%Y&quot;</span>
 <span class="nb">set</span> <span class="nv">SUMMARY_MAX_LENGTH</span> <span class="o">=</span> <span class="m">100</span>
 <span class="nb">set</span> <span class="nv">DISPLAY_PAGES_ON_MENU</span> <span class="o">=</span> False
+<span class="nb">set</span> <span class="nv">DEFAULT_CATEGORY</span> <span class="o">=</span> <span class="s2">&quot;Msic&quot;</span>
 
 vim puslishconf.py
 add LINKS after SITEURL
 <span class="nb">set</span> <span class="nv">DELETE_OUTPUT_DIRECTORY</span> <span class="o">=</span> False
-</pre></div>
-</td></tr></table><footer class="post-info">
+</pre></div><footer class="post-info">
         <abbr class="published" title="2017-10-02T20:20:50+08:00">
                 Published: Mon 10-02-2017
         </abbr>
 
-<p>In <a href="https://stamaimer.github.io/category/misc.html">misc</a>.</p>
+<p>In <a href="https://stamaimer.github.io/category/tutorial.html">Tutorial</a>.</p>
 
 </footer><!-- /.post-info -->                </article>
             </aside><!-- /#featured -->
@@ -207,7 +142,7 @@ add LINKS after SITEURL
                 Published: Mon 10-02-2017
         </abbr>
 
-<p>In <a href="https://stamaimer.github.io/category/misc.html">misc</a>.</p>
+<p>In <a href="https://stamaimer.github.io/category/msic.html">Msic</a>.</p>
 
 </footer><!-- /.post-info -->                <p>Hello, World.</p>
                 <a class="readmore" href="https://stamaimer.github.io/hello-world.html">read more</a>
